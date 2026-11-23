@@ -1,109 +1,38 @@
-# 羿恬的 AI 數位履歷分身浮動聊天小元件 🤖
-> **Cyber-Glassmorphism AI Resume Avatar Widget for GitHub Pages**
+# 陳羿恬 | 個人履歷網站 AI 數位分身浮動元件
+> **100% 保留原有淡雅紫藤紙張質感樣式，無縫嵌入 AI 數位履歷分身**
 
-這是一個專為「羿恬」的個人履歷網站設計的頂級科技感 **AI 數位履歷分身浮動小元件**。純前端實作（HTML + CSS + JS），**無需任何付費 API Key**，零維護成本、零外洩風險，直接貼上即可在 GitHub Pages 上流暢運作！
-
----
-
-## 🌟 核心功能特色
-
-1. **科技感呼吸光暈懸浮球**：
-   - 常駐於頁面右下角，具備機器人發光圖示、綠色實時在線狀態燈與呼吸波紋脈衝動畫。
-2. **Cyber-Glassmorphism 視窗**：
-   - 賽博毛玻璃質感、邊框微光流光、自適應手機（底欄抽屜）與電腦（右下彈窗）的響應式 RWD。
-3. **主動歡迎語**：
-   - 開啟視窗即主動問候：「*你好！我是羿恬的AI分身，隨時為您介紹羿恬的企管專案與產業專案成果，想了解甚麼呢？*」
-4. **4 個一鍵點選膠囊標籤 (Quick Chips)**：
-   - 💡 **自我介紹**
-   - 📊 **介紹你的產業分析專案**
-   - 💼 **你的企管核心專長**
-   - 📬 **如何連絡你**
-5. **Generative UI 專案導覽連動**：
-   - 詢問專案時，條理分明輸出核心亮點，並動態生成「👉 前往專案展示區」精美跳轉按鈕。
-   - 點擊後**平滑滾動 (Smooth Scroll)** 頁面至對應錨點，並**附帶 2 秒的科技藍高亮脈衝光暈**！
-6. **擬真串流打字機效果**：
-   - 模擬真實 LLM Token 流式輸出與打字光標，體驗極致絲滑。
-7. **開放式智慧意圖辨識**：
-   - 訪客自訂打字輸入（如：「你擅長什麼」、「有做過什麼分析」、「怎麼聯繫」）亦能智慧分類並回答。
+本專案完全以你目前的網站 [https://bn5pb67gk9-ship-it.github.io/resume/](https://bn5pb67gk9-ship-it.github.io/resume/) 為基準製作，**100% 保持你原有的美感、排版、色彩（#664579 / 薰衣草紙質風）與 Chart.js 動態圖表**，僅新增右下角的 AI 浮動小元件。
 
 ---
 
-## 📁 專案檔案結構
+## 🎯 檔案更新重點
 
-```
-ai-resume-widget/
-├── index.html              # 完整展示頁（含羿恬企管履歷區塊與展示測試）
-├── ai-avatar-widget.css    # 科技感樣式表 (毛玻璃、動畫、RWD)
-├── ai-avatar-widget.js     # 核心小元件邏輯 (知識庫、打字機、導覽連動)
-└── README.md               # 整合與客製化說明指南
-```
+1. **`index.html`**：
+   - 完整保留你的原始履歷內容（工作經歷、倉儲文書助理專案、3 個 Chart.js 圖表、數據核實清單、聯絡方式）。
+   - 僅在 `</head>` 前加入 `<link rel="stylesheet" href="ai-avatar-widget.css">`。
+   - 僅在 `</body>` 前加入 `<script src="ai-avatar-widget.js"></script>`。
 
----
+2. **`ai-avatar-widget.css`**：
+   - 採獨立命名空間（Scoped CSS），**完全不會污染或改變你原本網頁的任何標籤與樣式**。
+   - 顏色特別調校融合你的主題色（`#664579` 尊爵紫藤 + 科技微光），科技感十足且自然優雅。
+   - 支援手機（底部抽屜）與電腦（右下面板）自適應 RWD。
 
-## 🚀 如何整合到你現有的 GitHub Pages 網站？
-
-只需 2 步，30 秒極速完成部署：
-
-### 步驟 1：複製檔案
-將 `ai-avatar-widget.css` 與 `ai-avatar-widget.js` 放入你 GitHub 倉庫的靜態資源目錄（例如根目錄或 `assets/`）。
-
-### 步驟 2：在 HTML 引入
-
-在你的現有履歷 HTML 檔案中加入：
-
-```html
-<!-- 1. 在 <head> 內加入樣式表 -->
-<link rel="stylesheet" href="ai-avatar-widget.css">
-
-<!-- 2. 在 </body> 結尾標籤前引入腳本 -->
-<script src="ai-avatar-widget.js"></script>
-```
+3. **`ai-avatar-widget.js`**：
+   - **完全對齊你的真實履歷資料庫**：
+     - **自我介紹**：介紹萬能科大企管系進修部、出貨組文書實務，引導跳轉至 `#about`。
+     - **產業分析專案**：精準介紹你的「**倉儲文書助理產業分析與數位轉型研究**」（含 -45% 單據校對、-68% 揀貨錯漏改善、+52% 對帳效率），按鈕直接平滑滾動至 `#projects` 並發光高亮！
+     - **企管核心專長**：介紹現場與文書整合、SOP 優化、跨部門溝通與數據思維，引導跳轉至 `#strengths`。
+     - **如何連絡你**：提供電話 `0966-960-969`、Email `chen0966960969@gmail.com`，引導跳轉至 `#availability`。
+   - **純前端實作**：免申請 API Key，模擬即時串流打字效果，零成本無外洩風險。
 
 ---
 
-## ⚙️ 如何客製化問答內容與網頁錨點？
+## 🚀 如何同步到你的 GitHub 倉庫？
 
-打開 `ai-avatar-widget.js`，找到頂部的 `KNOWLEDGE_BASE` 物件，你可以隨時調整羿恬的回答內容或錨點：
+你只需要將以下三個檔案上傳並覆蓋至你的 GitHub 倉庫（`bn5pb67gk9-ship-it/resume`）：
 
-```javascript
-const KNOWLEDGE_BASE = {
-  // 1. 自我介紹
-  intro: {
-    text: `您的自訂自我介紹內容...`,
-    action: null
-  },
-  // 2. 產業分析專案
-  industry_project: {
-    text: `專案亮點與數據成果...`,
-    action: {
-      title: "🚀 查看專案成果詳情",
-      btnText: "👉 前往「產業分析專案展示區」",
-      anchor: "#industry-projects" // 對應你網頁中的 HTML id
-    }
-  },
-  // 3. 企管專長
-  mgmt_skills: {
-    text: `企管專長四大維度...`,
-    action: {
-      title: "💼 核心專長與認證",
-      btnText: "👉 查看「專業技能與實績展示」",
-      anchor: "#mgmt-projects" // 對應你網頁中的 HTML id
-    }
-  },
-  // 4. 聯絡方式
-  contact: {
-    text: `聯絡方式說明...`,
-    action: {
-      title: "📬 取得聯繫",
-      btnText: "👉 前往「聯絡羿恬區塊」",
-      anchor: "#contact" // 對應你網頁中的 HTML id
-    }
-  }
-};
-```
+1. **`index.html`**
+2. **`ai-avatar-widget.css`**
+3. **`ai-avatar-widget.js`**
 
----
-
-## 💻 本地測試預覽
-
-你可以直接在瀏覽器中雙擊打開 `index.html`，即可完整體驗呼吸光暈懸浮球、點擊展開、膠囊提問、串流打字及專案平滑跳轉連動！
+上傳完成後，GitHub Pages 會自動重新部署，即可在保留原有完整樣式的同時，擁有專屬的 AI 數位分身！
